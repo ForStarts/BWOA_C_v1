@@ -1,0 +1,1889 @@
+{
+  "users": [
+    {
+      "x": -31284.452249102902,
+      "y": 35979.596404240365,
+      "is_connected": true,
+      "access_entity": "beam",
+      "access_entity_id": 14
+    },
+    {
+      "x": -35106.6804424594,
+      "y": -6329.5875650848375,
+      "is_connected": true,
+      "access_entity": "beam",
+      "access_entity_id": 29
+    },
+    {
+      "x": 2549.1746239945655,
+      "y": -11593.654803718346,
+      "is_connected": true,
+      "access_entity": "baseStation",
+      "access_entity_id": 80
+    },
+    {
+      "x": -11420.936563069583,
+      "y": -45519.793071153756,
+      "is_connected": true,
+      "access_entity": "beam",
+      "access_entity_id": 24
+    },
+    {
+      "x": -41556.038197809277,
+      "y": 38467.271272350066,
+      "is_connected": true,
+      "access_entity": "beam",
+      "access_entity_id": 14
+    },
+    {
+      "x": 49437.285288165323,
+      "y": 37501.390302478612,
+      "is_connected": false,
+      "access_entity": "",
+      "access_entity_id": -1
+    },
+    {
+      "x": 43598.767297013663,
+      "y": 36213.490070697706,
+      "is_connected": false,
+      "access_entity": "",
+      "access_entity_id": -1
+    },
+    {
+      "x": -28579.251224847379,
+      "y": 56.729303878810811,
+      "is_connected": true,
+      "access_entity": "beam",
+      "access_entity_id": 0
+    },
+    {
+      "x": 23518.622144752786,
+      "y": 19451.702033435726,
+      "is_connected": true,
+      "access_entity": "beam",
+      "access_entity_id": 27
+    },
+    {
+      "x": 18388.562110595118,
+      "y": -25089.186998406687,
+      "is_connected": true,
+      "access_entity": "beam",
+      "access_entity_id": 23
+    },
+    {
+      "x": 9769.7586385371742,
+      "y": -3004.5102807090161,
+      "is_connected": false,
+      "access_entity": "",
+      "access_entity_id": -1
+    },
+    {
+      "x": -17770.421405436664,
+      "y": 42756.87730277775,
+      "is_connected": false,
+      "access_entity": "",
+      "access_entity_id": -1
+    },
+    {
+      "x": -7960.8772264337822,
+      "y": -8227.9479054797266,
+      "is_connected": false,
+      "access_entity": "",
+      "access_entity_id": -1
+    },
+    {
+      "x": -14841.288355371007,
+      "y": 34363.090392505255,
+      "is_connected": true,
+      "access_entity": "beam",
+      "access_entity_id": 21
+    },
+    {
+      "x": 33134.189798018851,
+      "y": -28488.91708823077,
+      "is_connected": true,
+      "access_entity": "beam",
+      "access_entity_id": 11
+    },
+    {
+      "x": 17227.769329060837,
+      "y": 28752.480103407241,
+      "is_connected": true,
+      "access_entity": "beam",
+      "access_entity_id": 27
+    },
+    {
+      "x": 22135.283620547551,
+      "y": -41182.35474722075,
+      "is_connected": true,
+      "access_entity": "beam",
+      "access_entity_id": 17
+    },
+    {
+      "x": 32218.944176916131,
+      "y": 36866.445308393944,
+      "is_connected": true,
+      "access_entity": "beam",
+      "access_entity_id": 4
+    },
+    {
+      "x": 13961.138213682822,
+      "y": -19668.487985823467,
+      "is_connected": true,
+      "access_entity": "beam",
+      "access_entity_id": 23
+    },
+    {
+      "x": 43113.079123244424,
+      "y": -13087.43711393684,
+      "is_connected": true,
+      "access_entity": "baseStation",
+      "access_entity_id": 28
+    },
+    {
+      "x": -41529.530694506881,
+      "y": -48093.244278856837,
+      "is_connected": false,
+      "access_entity": "",
+      "access_entity_id": -1
+    },
+    {
+      "x": 14247.545135455697,
+      "y": 16284.319237481337,
+      "is_connected": true,
+      "access_entity": "beam",
+      "access_entity_id": 27
+    },
+    {
+      "x": -48851.423679835236,
+      "y": -44025.505888861262,
+      "is_connected": false,
+      "access_entity": "",
+      "access_entity_id": -1
+    },
+    {
+      "x": 12662.79644646674,
+      "y": -19621.389178331516,
+      "is_connected": true,
+      "access_entity": "baseStation",
+      "access_entity_id": 81
+    },
+    {
+      "x": 47167.694937497639,
+      "y": -37476.51603871549,
+      "is_connected": false,
+      "access_entity": "",
+      "access_entity_id": -1
+    },
+    {
+      "x": 18854.546532116157,
+      "y": -17187.679444555448,
+      "is_connected": true,
+      "access_entity": "baseStation",
+      "access_entity_id": 35
+    },
+    {
+      "x": 18186.705795643422,
+      "y": -7261.479362424594,
+      "is_connected": true,
+      "access_entity": "beam",
+      "access_entity_id": 9
+    },
+    {
+      "x": -103.72724182773352,
+      "y": -33132.219644280638,
+      "is_connected": true,
+      "access_entity": "baseStation",
+      "access_entity_id": 4
+    },
+    {
+      "x": -16719.730414186419,
+      "y": -572.45660648489456,
+      "is_connected": true,
+      "access_entity": "baseStation",
+      "access_entity_id": 90
+    },
+    {
+      "x": -12102.629197980008,
+      "y": -35420.434554019062,
+      "is_connected": true,
+      "access_entity": "baseStation",
+      "access_entity_id": 18
+    },
+    {
+      "x": 21942.494075314491,
+      "y": -42269.627966107051,
+      "is_connected": true,
+      "access_entity": "beam",
+      "access_entity_id": 6
+    },
+    {
+      "x": 10229.73058736808,
+      "y": 27021.181773930115,
+      "is_connected": true,
+      "access_entity": "baseStation",
+      "access_entity_id": 66
+    },
+    {
+      "x": -23333.110337581496,
+      "y": 17748.428977673204,
+      "is_connected": true,
+      "access_entity": "baseStation",
+      "access_entity_id": 54
+    },
+    {
+      "x": 38088.8198487624,
+      "y": -34272.551916457349,
+      "is_connected": true,
+      "access_entity": "beam",
+      "access_entity_id": 11
+    },
+    {
+      "x": -36581.348320873374,
+      "y": -4893.3599209144195,
+      "is_connected": true,
+      "access_entity": "beam",
+      "access_entity_id": 29
+    },
+    {
+      "x": -8853.867234076406,
+      "y": -31797.429744346162,
+      "is_connected": false,
+      "access_entity": "",
+      "access_entity_id": -1
+    },
+    {
+      "x": 14147.567415768459,
+      "y": -44178.722612780693,
+      "is_connected": true,
+      "access_entity": "beam",
+      "access_entity_id": 26
+    },
+    {
+      "x": -23902.8095535993,
+      "y": -32270.864698534839,
+      "is_connected": true,
+      "access_entity": "baseStation",
+      "access_entity_id": 7
+    },
+    {
+      "x": 2216.5124681547522,
+      "y": -28580.454024450719,
+      "is_connected": true,
+      "access_entity": "beam",
+      "access_entity_id": 23
+    },
+    {
+      "x": 12792.557002404381,
+      "y": -20154.515955523733,
+      "is_connected": true,
+      "access_entity": "beam",
+      "access_entity_id": 9
+    },
+    {
+      "x": -30010.254095602741,
+      "y": 39027.163749848973,
+      "is_connected": true,
+      "access_entity": "beam",
+      "access_entity_id": 25
+    },
+    {
+      "x": -13566.440702990656,
+      "y": -38117.616389797193,
+      "is_connected": true,
+      "access_entity": "baseStation",
+      "access_entity_id": 18
+    },
+    {
+      "x": -15425.82742644455,
+      "y": 6026.8283287793993,
+      "is_connected": true,
+      "access_entity": "baseStation",
+      "access_entity_id": 92
+    },
+    {
+      "x": -34340.437148390854,
+      "y": -3987.8512131150678,
+      "is_connected": true,
+      "access_entity": "beam",
+      "access_entity_id": 29
+    },
+    {
+      "x": -6400.3021646230836,
+      "y": 14801.0689959304,
+      "is_connected": true,
+      "access_entity": "baseStation",
+      "access_entity_id": 91
+    },
+    {
+      "x": -44366.957490916306,
+      "y": 29465.613537747049,
+      "is_connected": true,
+      "access_entity": "beam",
+      "access_entity_id": 14
+    },
+    {
+      "x": 37147.49042401473,
+      "y": 34344.497285836049,
+      "is_connected": true,
+      "access_entity": "baseStation",
+      "access_entity_id": 63
+    },
+    {
+      "x": -14678.077933427236,
+      "y": -40861.6012438381,
+      "is_connected": true,
+      "access_entity": "baseStation",
+      "access_entity_id": 18
+    },
+    {
+      "x": -16005.573818596797,
+      "y": 2725.3627066196495,
+      "is_connected": true,
+      "access_entity": "baseStation",
+      "access_entity_id": 90
+    },
+    {
+      "x": -36766.224498419208,
+      "y": 2756.1701359350545,
+      "is_connected": true,
+      "access_entity": "beam",
+      "access_entity_id": 0
+    },
+    {
+      "x": 22426.136644165272,
+      "y": -21489.709055736428,
+      "is_connected": true,
+      "access_entity": "baseStation",
+      "access_entity_id": 34
+    },
+    {
+      "x": 14065.935964325237,
+      "y": 47178.803822478025,
+      "is_connected": true,
+      "access_entity": "beam",
+      "access_entity_id": 15
+    },
+    {
+      "x": -48975.967057074362,
+      "y": -11679.101269247505,
+      "is_connected": true,
+      "access_entity": "baseStation",
+      "access_entity_id": 14
+    },
+    {
+      "x": 44726.321083017428,
+      "y": 12523.072929730839,
+      "is_connected": false,
+      "access_entity": "",
+      "access_entity_id": -1
+    },
+    {
+      "x": 19151.155822667344,
+      "y": -23203.620160130689,
+      "is_connected": true,
+      "access_entity": "beam",
+      "access_entity_id": 1
+    },
+    {
+      "x": -10373.022656746933,
+      "y": 37092.156759734593,
+      "is_connected": false,
+      "access_entity": "",
+      "access_entity_id": -1
+    },
+    {
+      "x": -34891.341170885848,
+      "y": 21178.1310000022,
+      "is_connected": true,
+      "access_entity": "beam",
+      "access_entity_id": 13
+    },
+    {
+      "x": -47301.503982074377,
+      "y": 26977.771560985209,
+      "is_connected": true,
+      "access_entity": "beam",
+      "access_entity_id": 16
+    },
+    {
+      "x": -14260.480443137834,
+      "y": 31179.095968311278,
+      "is_connected": true,
+      "access_entity": "beam",
+      "access_entity_id": 21
+    },
+    {
+      "x": -6231.0347390178931,
+      "y": 28482.583840264419,
+      "is_connected": true,
+      "access_entity": "beam",
+      "access_entity_id": 7
+    },
+    {
+      "x": 8035.8687756328927,
+      "y": 25347.324031110606,
+      "is_connected": true,
+      "access_entity": "baseStation",
+      "access_entity_id": 67
+    },
+    {
+      "x": -44745.945268660224,
+      "y": -40237.575420754831,
+      "is_connected": false,
+      "access_entity": "",
+      "access_entity_id": -1
+    },
+    {
+      "x": 32638.779784207174,
+      "y": 37757.192712147917,
+      "is_connected": true,
+      "access_entity": "beam",
+      "access_entity_id": 4
+    },
+    {
+      "x": -18635.450565811228,
+      "y": -33325.019458722316,
+      "is_connected": true,
+      "access_entity": "baseStation",
+      "access_entity_id": 9
+    },
+    {
+      "x": 13317.453420814163,
+      "y": 37109.298167503155,
+      "is_connected": true,
+      "access_entity": "baseStation",
+      "access_entity_id": 61
+    },
+    {
+      "x": 13601.017908575286,
+      "y": -18469.777912360296,
+      "is_connected": true,
+      "access_entity": "baseStation",
+      "access_entity_id": 27
+    },
+    {
+      "x": -26033.324484232435,
+      "y": -40639.479451408013,
+      "is_connected": true,
+      "access_entity": "baseStation",
+      "access_entity_id": 7
+    },
+    {
+      "x": -14507.210136682213,
+      "y": 17210.378975063322,
+      "is_connected": true,
+      "access_entity": "baseStation",
+      "access_entity_id": 47
+    },
+    {
+      "x": 42442.047331848335,
+      "y": 2179.0357160450635,
+      "is_connected": true,
+      "access_entity": "beam",
+      "access_entity_id": 5
+    },
+    {
+      "x": -44272.180069220871,
+      "y": -30319.698792496507,
+      "is_connected": false,
+      "access_entity": "",
+      "access_entity_id": -1
+    },
+    {
+      "x": 17931.726261255142,
+      "y": -38579.185723657662,
+      "is_connected": true,
+      "access_entity": "beam",
+      "access_entity_id": 26
+    },
+    {
+      "x": -5288.4946163550549,
+      "y": -31563.222578981331,
+      "is_connected": true,
+      "access_entity": "baseStation",
+      "access_entity_id": 4
+    },
+    {
+      "x": 37658.593169227213,
+      "y": -28868.220067734008,
+      "is_connected": true,
+      "access_entity": "beam",
+      "access_entity_id": 11
+    },
+    {
+      "x": -38626.325209989445,
+      "y": -2951.0131939394669,
+      "is_connected": true,
+      "access_entity": "beam",
+      "access_entity_id": 29
+    },
+    {
+      "x": 47400.482622295247,
+      "y": -35997.088659369467,
+      "is_connected": false,
+      "access_entity": "",
+      "access_entity_id": -1
+    },
+    {
+      "x": -42783.879892700817,
+      "y": 9613.5400473669979,
+      "is_connected": true,
+      "access_entity": "beam",
+      "access_entity_id": 29
+    },
+    {
+      "x": 43375.203922372537,
+      "y": 716.97636132943558,
+      "is_connected": true,
+      "access_entity": "beam",
+      "access_entity_id": 5
+    },
+    {
+      "x": -22798.336429092757,
+      "y": 35390.917116875011,
+      "is_connected": true,
+      "access_entity": "baseStation",
+      "access_entity_id": 43
+    },
+    {
+      "x": 44732.746110988723,
+      "y": 6221.5251579201713,
+      "is_connected": false,
+      "access_entity": "",
+      "access_entity_id": -1
+    },
+    {
+      "x": 2906.3795694081241,
+      "y": 14526.66174363153,
+      "is_connected": true,
+      "access_entity": "baseStation",
+      "access_entity_id": 83
+    },
+    {
+      "x": -11570.175296053587,
+      "y": -6348.6742662177912,
+      "is_connected": true,
+      "access_entity": "beam",
+      "access_entity_id": 19
+    },
+    {
+      "x": 5210.765479780699,
+      "y": 4566.62693885217,
+      "is_connected": true,
+      "access_entity": "baseStation",
+      "access_entity_id": 89
+    },
+    {
+      "x": 40073.1372891133,
+      "y": 16893.693783956089,
+      "is_connected": true,
+      "access_entity": "beam",
+      "access_entity_id": 22
+    },
+    {
+      "x": 7108.0710741497578,
+      "y": 21719.732948783123,
+      "is_connected": true,
+      "access_entity": "beam",
+      "access_entity_id": 7
+    },
+    {
+      "x": -1051.8511667503506,
+      "y": 7911.4967732379364,
+      "is_connected": true,
+      "access_entity": "beam",
+      "access_entity_id": 20
+    },
+    {
+      "x": -569.54556282058365,
+      "y": 36357.761578525053,
+      "is_connected": true,
+      "access_entity": "beam",
+      "access_entity_id": 7
+    },
+    {
+      "x": -30361.506177095387,
+      "y": 30882.240430060658,
+      "is_connected": true,
+      "access_entity": "baseStation",
+      "access_entity_id": 55
+    },
+    {
+      "x": 26086.881096057856,
+      "y": -31832.104121087279,
+      "is_connected": true,
+      "access_entity": "baseStation",
+      "access_entity_id": 33
+    },
+    {
+      "x": 12913.77314195472,
+      "y": 7366.2168497806488,
+      "is_connected": true,
+      "access_entity": "baseStation",
+      "access_entity_id": 59
+    },
+    {
+      "x": 42331.078239112278,
+      "y": -39539.511588005291,
+      "is_connected": false,
+      "access_entity": "",
+      "access_entity_id": -1
+    },
+    {
+      "x": 8352.5078864302159,
+      "y": -14227.161398452603,
+      "is_connected": true,
+      "access_entity": "baseStation",
+      "access_entity_id": 80
+    },
+    {
+      "x": 14967.925794860259,
+      "y": -30191.552971869907,
+      "is_connected": true,
+      "access_entity": "beam",
+      "access_entity_id": 6
+    },
+    {
+      "x": 2544.5904687454004,
+      "y": 34024.645057754424,
+      "is_connected": true,
+      "access_entity": "baseStation",
+      "access_entity_id": 64
+    },
+    {
+      "x": -6707.391210092961,
+      "y": -14285.453529584791,
+      "is_connected": true,
+      "access_entity": "baseStation",
+      "access_entity_id": 97
+    },
+    {
+      "x": -33671.714353495394,
+      "y": -26565.403331986581,
+      "is_connected": true,
+      "access_entity": "baseStation",
+      "access_entity_id": 12
+    },
+    {
+      "x": 26195.223071864439,
+      "y": -42470.687119528884,
+      "is_connected": true,
+      "access_entity": "beam",
+      "access_entity_id": 17
+    },
+    {
+      "x": -47524.998906469482,
+      "y": -42313.913739212374,
+      "is_connected": false,
+      "access_entity": "",
+      "access_entity_id": -1
+    },
+    {
+      "x": -19438.548465681306,
+      "y": -20768.208476439686,
+      "is_connected": true,
+      "access_entity": "beam",
+      "access_entity_id": 18
+    },
+    {
+      "x": 13976.438031542493,
+      "y": 12679.578622392084,
+      "is_connected": false,
+      "access_entity": "",
+      "access_entity_id": -1
+    },
+    {
+      "x": 1968.9106075515217,
+      "y": -17549.294921779358,
+      "is_connected": false,
+      "access_entity": "",
+      "access_entity_id": -1
+    }
+  ],
+  "baseStations": [
+    {
+      "id": 0,
+      "x": -36695.2599552412,
+      "y": -38980.141775811164,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 1,
+      "x": -21017.323596699276,
+      "y": -44598.408866672922,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 2,
+      "x": -50000,
+      "y": -19484.671320722871,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 3,
+      "x": -40946.1818500315,
+      "y": -16913.110630455092,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 4,
+      "x": -1417.9839739299132,
+      "y": -29399.4699448572,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 2,
+      "preamble_num": 64
+    },
+    {
+      "id": 5,
+      "x": -28998.935186778694,
+      "y": -32962.54874509752,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 6,
+      "x": -39989.155284798915,
+      "y": -35953.908503434563,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 7,
+      "x": -25735.624963126967,
+      "y": -36634.94056929255,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 2,
+      "preamble_num": 64
+    },
+    {
+      "id": 8,
+      "x": -22284.443512482288,
+      "y": -28912.378185518897,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 9,
+      "x": -16654.578395783843,
+      "y": -30016.299178010817,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 1,
+      "preamble_num": 64
+    },
+    {
+      "id": 10,
+      "x": -20809.132927126608,
+      "y": -14226.324269774754,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 11,
+      "x": -28246.534391775829,
+      "y": -28733.842719585915,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 12,
+      "x": -32287.7727488077,
+      "y": -27787.213561536941,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 1,
+      "preamble_num": 64
+    },
+    {
+      "id": 13,
+      "x": -27518.522425408752,
+      "y": -20987.835393972913,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 14,
+      "x": -50000,
+      "y": -14371.850413323704,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 1,
+      "preamble_num": 64
+    },
+    {
+      "id": 15,
+      "x": -37909.380151895486,
+      "y": -31426.7791976251,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 16,
+      "x": -32193.3517336255,
+      "y": -19706.708912208425,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 17,
+      "x": -21941.015896336554,
+      "y": -5593.07684832306,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 18,
+      "x": -12683.937372092252,
+      "y": -39613.842598236144,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 3,
+      "preamble_num": 64
+    },
+    {
+      "id": 19,
+      "x": -34774.854422710741,
+      "y": -11733.534135953467,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 20,
+      "x": 22222.720252862386,
+      "y": -26870.279497716467,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 21,
+      "x": 14618.579502880926,
+      "y": -32138.887083802711,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 22,
+      "x": 30032.051410044467,
+      "y": -4721.2643003679295,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 23,
+      "x": 18521.203869664365,
+      "y": -32666.751794732427,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 24,
+      "x": 26127.351802705962,
+      "y": -14090.335868977916,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 25,
+      "x": 28382.695289559349,
+      "y": -15104.457140572418,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 26,
+      "x": 19957.775347011819,
+      "y": -34800.009192719423,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 27,
+      "x": 12270.643433687197,
+      "y": -21165.59312241005,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 1,
+      "preamble_num": 64
+    },
+    {
+      "id": 28,
+      "x": 42677.731107586376,
+      "y": -15371.723253989669,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 1,
+      "preamble_num": 64
+    },
+    {
+      "id": 29,
+      "x": 35014.164542324288,
+      "y": -6489.532430224197,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 30,
+      "x": 30422.026559328748,
+      "y": -17801.018157313083,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 31,
+      "x": 7247.6524838812911,
+      "y": -34680.999791669907,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 32,
+      "x": 17642.116848163147,
+      "y": -30012.982699748594,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 33,
+      "x": 23846.682776266985,
+      "y": -34301.384991083833,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 1,
+      "preamble_num": 64
+    },
+    {
+      "id": 34,
+      "x": 23686.750092388447,
+      "y": -23769.872161487114,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 1,
+      "preamble_num": 64
+    },
+    {
+      "id": 35,
+      "x": 20881.814433627,
+      "y": -21054.702937387683,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 1,
+      "preamble_num": 64
+    },
+    {
+      "id": 36,
+      "x": 15924.154158864952,
+      "y": -38852.719563762643,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 37,
+      "x": 17859.818521425485,
+      "y": -14765.452675815075,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 38,
+      "x": 37299.514982408844,
+      "y": -20239.767651758772,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 39,
+      "x": 10996.372419679745,
+      "y": -40924.670723301882,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 40,
+      "x": -24123.207902461523,
+      "y": 50000,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 41,
+      "x": -41058.847522437,
+      "y": 4168.2385757093834,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 42,
+      "x": -10548.565030516083,
+      "y": 29837.633200313139,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 43,
+      "x": -24140.16026731702,
+      "y": 39545.068031956835,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 1,
+      "preamble_num": 64
+    },
+    {
+      "id": 44,
+      "x": -26405.3235019353,
+      "y": 24705.483768153081,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 45,
+      "x": -25290.955672406908,
+      "y": 15490.547142880794,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 46,
+      "x": -22896.773862613107,
+      "y": 26155.553152005978,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 47,
+      "x": -11188.544453911922,
+      "y": 14981.869963101053,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 1,
+      "preamble_num": 64
+    },
+    {
+      "id": 48,
+      "x": -40082.75534606904,
+      "y": 17081.566315309941,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 49,
+      "x": -20456.901708322632,
+      "y": 22789.024368222508,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 50,
+      "x": -29332.938101248888,
+      "y": 21385.653527296949,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 51,
+      "x": -40094.895614775276,
+      "y": 19515.079286474291,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 52,
+      "x": -23169.8414128293,
+      "y": 29751.764197914486,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 53,
+      "x": -16828.123872927121,
+      "y": 15717.02808460712,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 54,
+      "x": -20203.210659764929,
+      "y": 15754.229901412809,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 1,
+      "preamble_num": 64
+    },
+    {
+      "id": 55,
+      "x": -34916.154027392244,
+      "y": 29691.366972506243,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 1,
+      "preamble_num": 64
+    },
+    {
+      "id": 56,
+      "x": -27974.399771519631,
+      "y": 10048.50428026657,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 57,
+      "x": -22177.474549897033,
+      "y": 16978.997682552788,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 58,
+      "x": -46356.554239218065,
+      "y": 18550.588816682481,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 59,
+      "x": 8708.7167218518443,
+      "y": 8814.07555344625,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 1,
+      "preamble_num": 64
+    },
+    {
+      "id": 60,
+      "x": 22733.254312075456,
+      "y": -1928.444680447501,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 61,
+      "x": 13391.49661685422,
+      "y": 38224.648442400314,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 1,
+      "preamble_num": 64
+    },
+    {
+      "id": 62,
+      "x": 37679.668399468304,
+      "y": 31972.895143417456,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 63,
+      "x": 33269.8954438184,
+      "y": 32180.932653654865,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 1,
+      "preamble_num": 64
+    },
+    {
+      "id": 64,
+      "x": -806.02686738806,
+      "y": 32487.395860172452,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 1,
+      "preamble_num": 64
+    },
+    {
+      "id": 65,
+      "x": 50000,
+      "y": 9190.1800065968873,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 66,
+      "x": 11970.828637949768,
+      "y": 30881.750647901616,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 1,
+      "preamble_num": 64
+    },
+    {
+      "id": 67,
+      "x": 4600.0224734765034,
+      "y": 27037.00879705228,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 1,
+      "preamble_num": 64
+    },
+    {
+      "id": 68,
+      "x": 7987.2828411795817,
+      "y": 14960.952907194458,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 69,
+      "x": 13136.030728790665,
+      "y": 6759.8480291338819,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 70,
+      "x": 15033.518149896936,
+      "y": 23235.172625998606,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 71,
+      "x": 15687.376556773084,
+      "y": 48365.68462604568,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 72,
+      "x": 41958.155835177269,
+      "y": 23647.462307991434,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 73,
+      "x": 24926.650246008776,
+      "y": 11425.456964543191,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 74,
+      "x": 36964.454286913373,
+      "y": 41302.239538759779,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 75,
+      "x": 7167.653123728378,
+      "y": 33260.360107830187,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 76,
+      "x": 38175.181059222392,
+      "y": 12338.762245216167,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 77,
+      "x": 19130.496614625517,
+      "y": 37628.177055577646,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 78,
+      "x": 26125.449522859348,
+      "y": 28448.551210486188,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 79,
+      "x": 32445.625274904887,
+      "y": 28672.760396003396,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 80,
+      "x": 5030.4999928887646,
+      "y": -12210.430491792424,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 2,
+      "preamble_num": 64
+    },
+    {
+      "id": 81,
+      "x": 12273.917581961492,
+      "y": -16124.770019844784,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 1,
+      "preamble_num": 64
+    },
+    {
+      "id": 82,
+      "x": -17231.410925472625,
+      "y": 23364.2155760033,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 83,
+      "x": 3410.2765498421459,
+      "y": 10378.499096782394,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 1,
+      "preamble_num": 64
+    },
+    {
+      "id": 84,
+      "x": -23029.168865401651,
+      "y": -5376.846946990001,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 85,
+      "x": 2013.811156510056,
+      "y": 25719.485451197783,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 86,
+      "x": -2468.4786398417896,
+      "y": 1393.1985156357321,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 87,
+      "x": -29940.472668791572,
+      "y": 13437.8277340227,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 88,
+      "x": 6928.5219840260388,
+      "y": 16124.646709013634,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 89,
+      "x": 6907.811781171531,
+      "y": 8656.3746533290632,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 1,
+      "preamble_num": 64
+    },
+    {
+      "id": 90,
+      "x": -12713.231041521503,
+      "y": -127.10739270222436,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 2,
+      "preamble_num": 64
+    },
+    {
+      "id": 91,
+      "x": -2761.8006284023058,
+      "y": 15596.256823741014,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 1,
+      "preamble_num": 64
+    },
+    {
+      "id": 92,
+      "x": -11483.215957727865,
+      "y": 7539.3872936688713,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 1,
+      "preamble_num": 64
+    },
+    {
+      "id": 93,
+      "x": -12892.9555005833,
+      "y": 4118.084948316161,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 94,
+      "x": -4427.0973052702484,
+      "y": 8520.083402359458,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 95,
+      "x": 9601.606903394686,
+      "y": -24894.17459203516,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 96,
+      "x": -30194.291676730583,
+      "y": 24604.535495733839,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 97,
+      "x": -4831.367938846769,
+      "y": -13763.514603547412,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 1,
+      "preamble_num": 64
+    },
+    {
+      "id": 98,
+      "x": 5683.6213867787419,
+      "y": 35326.440021343617,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 99,
+      "x": -21306.254132490656,
+      "y": -9959.6119273201475,
+      "coverage_radius": 5000,
+      "capacity": 20,
+      "current_load": 0,
+      "preamble_num": 64
+    }
+  ],
+  "beams": [
+    {
+      "id": 0,
+      "x": -27924.499787599834,
+      "y": 4897.0859351885947,
+      "coverage_radius": 10000,
+      "capacity": 50,
+      "current_load": 2,
+      "preamble_num": 64
+    },
+    {
+      "id": 1,
+      "x": 19272.318437902424,
+      "y": -19836.615185600538,
+      "coverage_radius": 10000,
+      "capacity": 50,
+      "current_load": 1,
+      "preamble_num": 64
+    },
+    {
+      "id": 2,
+      "x": -47677.346584936233,
+      "y": 41792.082872794723,
+      "coverage_radius": 10000,
+      "capacity": 50,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 3,
+      "x": 3244.4144114783689,
+      "y": 10219.867556741347,
+      "coverage_radius": 10000,
+      "capacity": 50,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 4,
+      "x": 32797.478774101706,
+      "y": 46159.02038106534,
+      "coverage_radius": 10000,
+      "capacity": 50,
+      "current_load": 2,
+      "preamble_num": 64
+    },
+    {
+      "id": 5,
+      "x": 34416.0098978265,
+      "y": -2460.4880307384169,
+      "coverage_radius": 10000,
+      "capacity": 50,
+      "current_load": 2,
+      "preamble_num": 64
+    },
+    {
+      "id": 6,
+      "x": 16704.943393491933,
+      "y": -38603.357104146344,
+      "coverage_radius": 10000,
+      "capacity": 50,
+      "current_load": 2,
+      "preamble_num": 64
+    },
+    {
+      "id": 7,
+      "x": 2451.1203637180847,
+      "y": 28653.186546469202,
+      "coverage_radius": 10000,
+      "capacity": 50,
+      "current_load": 3,
+      "preamble_num": 64
+    },
+    {
+      "id": 8,
+      "x": 26036.526002251714,
+      "y": 34476.185027424632,
+      "coverage_radius": 10000,
+      "capacity": 50,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 9,
+      "x": 15233.252773962735,
+      "y": -12786.982751642961,
+      "coverage_radius": 10000,
+      "capacity": 50,
+      "current_load": 2,
+      "preamble_num": 64
+    },
+    {
+      "id": 10,
+      "x": -47930.804225649292,
+      "y": 43843.664673538362,
+      "coverage_radius": 10000,
+      "capacity": 50,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 11,
+      "x": 37119.642024393172,
+      "y": -28713.122797195334,
+      "coverage_radius": 10000,
+      "capacity": 50,
+      "current_load": 3,
+      "preamble_num": 64
+    },
+    {
+      "id": 12,
+      "x": -47457.498336750745,
+      "y": 41033.411996285387,
+      "coverage_radius": 10000,
+      "capacity": 50,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 13,
+      "x": -27603.57841913501,
+      "y": 20904.761660992121,
+      "coverage_radius": 10000,
+      "capacity": 50,
+      "current_load": 1,
+      "preamble_num": 64
+    },
+    {
+      "id": 14,
+      "x": -36246.6977801215,
+      "y": 35047.411722767829,
+      "coverage_radius": 10000,
+      "capacity": 50,
+      "current_load": 3,
+      "preamble_num": 64
+    },
+    {
+      "id": 15,
+      "x": 4410.5357072763527,
+      "y": 44854.024367556558,
+      "coverage_radius": 10000,
+      "capacity": 50,
+      "current_load": 1,
+      "preamble_num": 64
+    },
+    {
+      "id": 16,
+      "x": -46876.581560685961,
+      "y": 33806.276300918456,
+      "coverage_radius": 10000,
+      "capacity": 50,
+      "current_load": 1,
+      "preamble_num": 64
+    },
+    {
+      "id": 17,
+      "x": 17829.683098880058,
+      "y": -38170.253369561215,
+      "coverage_radius": 10000,
+      "capacity": 50,
+      "current_load": 2,
+      "preamble_num": 64
+    },
+    {
+      "id": 18,
+      "x": -17135.860981224527,
+      "y": -17351.781050146419,
+      "coverage_radius": 10000,
+      "capacity": 50,
+      "current_load": 1,
+      "preamble_num": 64
+    },
+    {
+      "id": 19,
+      "x": -19180.420172199654,
+      "y": -2437.0792486513637,
+      "coverage_radius": 10000,
+      "capacity": 50,
+      "current_load": 1,
+      "preamble_num": 64
+    },
+    {
+      "id": 20,
+      "x": 1336.6518304644414,
+      "y": 4284.2246350639716,
+      "coverage_radius": 10000,
+      "capacity": 50,
+      "current_load": 1,
+      "preamble_num": 64
+    },
+    {
+      "id": 21,
+      "x": -20712.394164616711,
+      "y": 27657.250806861135,
+      "coverage_radius": 10000,
+      "capacity": 50,
+      "current_load": 2,
+      "preamble_num": 64
+    },
+    {
+      "id": 22,
+      "x": 39910.993447901055,
+      "y": 21475.923282020038,
+      "coverage_radius": 10000,
+      "capacity": 50,
+      "current_load": 1,
+      "preamble_num": 64
+    },
+    {
+      "id": 23,
+      "x": 10891.467871652372,
+      "y": -24204.292346994793,
+      "coverage_radius": 10000,
+      "capacity": 50,
+      "current_load": 3,
+      "preamble_num": 64
+    },
+    {
+      "id": 24,
+      "x": -9693.709490163561,
+      "y": -48233.381488105668,
+      "coverage_radius": 10000,
+      "capacity": 50,
+      "current_load": 1,
+      "preamble_num": 64
+    },
+    {
+      "id": 25,
+      "x": -31900.717534546275,
+      "y": 48050.852944856168,
+      "coverage_radius": 10000,
+      "capacity": 50,
+      "current_load": 1,
+      "preamble_num": 64
+    },
+    {
+      "id": 26,
+      "x": 17459.299060769161,
+      "y": -44618.319147769434,
+      "coverage_radius": 10000,
+      "capacity": 50,
+      "current_load": 2,
+      "preamble_num": 64
+    },
+    {
+      "id": 27,
+      "x": 18494.636454166081,
+      "y": 23410.757824605964,
+      "coverage_radius": 10000,
+      "capacity": 50,
+      "current_load": 3,
+      "preamble_num": 64
+    },
+    {
+      "id": 28,
+      "x": -25546.485447204104,
+      "y": 29499.481270771365,
+      "coverage_radius": 10000,
+      "capacity": 50,
+      "current_load": 0,
+      "preamble_num": 64
+    },
+    {
+      "id": 29,
+      "x": -42808.273205808233,
+      "y": -196.96842205304543,
+      "coverage_radius": 10000,
+      "capacity": 50,
+      "current_load": 5,
+      "preamble_num": 64
+    }
+  ],
+  "metadata": {
+    "simulation_area_size": 100000,
+    "generation_timestamp": "2026-01-06 15:14:04",
+    "unit": "meters",
+    "connection_stats": {
+      "connected_to_base": 35,
+      "connected_to_beam": 46,
+      "not_connected": 19,
+      "total_users": 100
+    }
+  }
+}
