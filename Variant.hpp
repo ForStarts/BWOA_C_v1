@@ -27,7 +27,11 @@ Vec3<T> make_vec3(int dim1, int dim2, int dim3, const T& val = T()) {
 
 /*fobj函数（适应度函数fitness objection function）的返回结构体*/
 struct fobjReturn {
+<<<<<<< HEAD
     vector<vector<double>> M_2D;
+=======
+    vector<vector<vector<double>>> M_3D;
+>>>>>>> b21bb33517c48e9ca50b0da2d6eacdafe80edfa9
     double HO_Sucnow;
     double fitness;
 
@@ -35,8 +39,13 @@ struct fobjReturn {
     fobjReturn() : HO_Sucnow(0.0), fitness(0.0) {}
 
     //带维度的构造函数
+<<<<<<< HEAD
     fobjReturn(int dim1, int dim2, double init_val = 0.0)
         :M_2D(dim1, vector<double>(dim2, init_val)),
+=======
+    fobjReturn(int dim1, int dim2, int dim3, double init_val = 0.0)
+        :M_3D(dim1, vector<vector<double>>(dim2, vector<double>(dim3, init_val))),
+>>>>>>> b21bb33517c48e9ca50b0da2d6eacdafe80edfa9
         HO_Sucnow(0.0), fitness(0.0) {}
 };
 
@@ -83,7 +92,10 @@ struct baseStation {
 };
 
 /*配置切换相关参数*/
+<<<<<<< HEAD
 #define switch_judgment_interval 250     //配置切换判决间隔(ms)
 #define small_slot_interval 10           //小时隙间隔(ms)
 #define slot_num (switch_judgment_interval/small_slot_interval)  //小时隙数
 #define BWOA_num 1                        //配置所使用的BWOA转移函数类型
+=======
+>>>>>>> b21bb33517c48e9ca50b0da2d6eacdafe80edfa9

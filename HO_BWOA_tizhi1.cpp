@@ -114,6 +114,7 @@ bool writeMatrixToFile(const string& file_path, const vector<T>& vec)
 }
 
 /*用于评估搜索代理优劣的目标函数*/
+<<<<<<< HEAD
 fobjReturn fobj0811v3(vector<double> Pos, int dim, vector<int> para_GRemain, vector<int> para_Galloc, int user_num, int sate_num, int slot_num, int Th_G)
 {
     //初始化返回结构体
@@ -125,6 +126,19 @@ fobjReturn fobj0811v3(vector<double> Pos, int dim, vector<int> para_GRemain, vec
         int i = index / (sate_num * slot_num);
         int j = (index % (sate_num * slot_num)) / slot_num;
         int k = (index % (sate_num * slot_num)) % slot_num;
+=======
+fobjReturn fobj0811v3(vector<double> Pos, int dim, vector<int> para_GRemain, vector<int> para_Galloc, int para_Gnum, int para_Snum, int para_period, int Th_G)
+{
+    //初始化返回结构体
+    fobjReturn fobj_return(para_Gnum, para_Snum, para_period, 0.0);
+    vector<vector<vector<double>>> M_3D = make_vec3(para_Gnum, para_Snum, para_period, 0.0);
+    //将一维数组重建为三维数组（主意这里matlab的reshape是列主序！！！）
+    for (int index = 0; index < Pos.size(); index++)
+    {
+        int i = index / (para_Snum * para_period);
+        int j = (index % (para_Snum * para_period)) / para_period;
+        int k = (index % (para_Snum * para_period)) % para_period;
+>>>>>>> b21bb33517c48e9ca50b0da2d6eacdafe80edfa9
         M_3D[i][j][k] = Pos[index];
     }
 
@@ -139,7 +153,11 @@ fobjReturn fobj0811v3(vector<double> Pos, int dim, vector<int> para_GRemain, vec
     int muy1 = 1e5;
     //vector<double> ceshi1 = sum_vec2d(M_3D[0]);
     //double ceshi2 = sum_vec1d(sum_vec2d(M_3D[0]));
+<<<<<<< HEAD
     for (int g = 0; g < user_num; g++)
+=======
+    for (int g = 0; g < para_Gnum; g++)
+>>>>>>> b21bb33517c48e9ca50b0da2d6eacdafe80edfa9
     {
         vector<double> M_3D_sum1 = sum_vec2d(M_3D[g]);  //对第二维（卫星）求和
         double M_3D_sum2 = sum_vec1d(M_3D_sum1);    //对第二、三维求和
@@ -161,11 +179,19 @@ fobjReturn fobj0811v3(vector<double> Pos, int dim, vector<int> para_GRemain, vec
     //处理约束2：单星负载限制，先简单用用户数量估计。
     double pen2 = 0;
     double muy2 = 1;
+<<<<<<< HEAD
     vector<int> loadS(sate_num, 0);    //记录sat负载，超载则直接记当前负载为门限值
     vector<bool> isLoadOver(sate_num, 0);  //标记sat是否超负载
     for (int s = 0; s < sate_num; s++)
     {
         for (int g = 0; g < user_num; g++)
+=======
+    vector<int> loadS(para_Snum, 0);    //记录sat负载，超载则直接记当前负载为门限值
+    vector<bool> isLoadOver(para_Snum, 0);  //标记sat是否超负载
+    for (int s = 0; s < para_Snum; s++)
+    {
+        for (int g = 0; g < para_Gnum; g++)
+>>>>>>> b21bb33517c48e9ca50b0da2d6eacdafe80edfa9
         {
             //确保两次切换之间仅分配一个时隙给该群组，或者无分配，无分配则无需加该群组用户。
             if (sum_vec1d(M_3D[g][s]) == 1)
@@ -185,6 +211,7 @@ fobjReturn fobj0811v3(vector<double> Pos, int dim, vector<int> para_GRemain, vec
     //处理约束3：单星各时隙接入群组数量限制
 	double pen3 = 0;
 	double muy3 = 1e5;
+<<<<<<< HEAD
     for (int s = 0; s < sate_num; s++)
     {
         for (int t = 0; t < slot_num; t++)
@@ -192,6 +219,15 @@ fobjReturn fobj0811v3(vector<double> Pos, int dim, vector<int> para_GRemain, vec
             //计算该星该时隙接入了多少群组
             double sum_group_num = 0;
             for (int g = 0; g < user_num; g++)
+=======
+    for (int s = 0; s < para_Snum; s++)
+    {
+        for (int t = 0; t < para_period; t++)
+        {
+            //计算该星该时隙接入了多少群组
+            double sum_group_num = 0;
+            for (int g = 0; g < para_Gnum; g++)
+>>>>>>> b21bb33517c48e9ca50b0da2d6eacdafe80edfa9
             {
                 sum_group_num += M_3D[g][s][t];
             }
@@ -206,12 +242,17 @@ fobjReturn fobj0811v3(vector<double> Pos, int dim, vector<int> para_GRemain, vec
 
     //step1：处理约束1:--若决策指示多星/多时隙接入，保留时机最靠前判决
     //过程：对于超出约束的群组，M_3D中仅保留时间最靠前的接入情况（置1），其他都置0。
+<<<<<<< HEAD
     for (int gID = 0; gID < user_num; gID++)
+=======
+    for (int gID = 0; gID < para_Gnum; gID++)
+>>>>>>> b21bb33517c48e9ca50b0da2d6eacdafe80edfa9
     {
         if (sum_vec1d(sum_vec2d(M_3D[gID])) > 1)   //单群组存在多星/多时隙接入情况
         {
             //先遍历时间，则可以快速找到时机最靠前判决
             bool hasFind = 0;
+<<<<<<< HEAD
             for (int t = 0; t < slot_num; t++)
             {
                 for (int s = 0; s < sate_num; s++)
@@ -219,6 +260,15 @@ fobjReturn fobj0811v3(vector<double> Pos, int dim, vector<int> para_GRemain, vec
                     if (M_3D[gID][s][t] == 1){  //找到了
                         //保留时机最靠前判决
                         M_3D[gID] = make_vec2<double>(sate_num, slot_num, 0.0);
+=======
+            for (int t = 0; t < para_period; t++)
+            {
+                for (int s = 0; s < para_Snum; s++)
+                {
+                    if (M_3D[gID][s][t] == 1){  //找到了
+                        //保留时机最靠前判决
+                        M_3D[gID] = make_vec2<double>(para_Snum, para_period, 0.0);
+>>>>>>> b21bb33517c48e9ca50b0da2d6eacdafe80edfa9
                         M_3D[gID][s][t] = 1;
                         hasFind = 1;
                         break;
@@ -232,15 +282,25 @@ fobjReturn fobj0811v3(vector<double> Pos, int dim, vector<int> para_GRemain, vec
     }
 
     //step2：处理约束3--若s星t时隙接入群组数超出，则保留用户数较多的群组。
+<<<<<<< HEAD
     for (int s = 0; s < sate_num; s++)
     {
         for (int t = 0; t < slot_num; t++)
+=======
+    for (int s = 0; s < para_Snum; s++)
+    {
+        for (int t = 0; t < para_period; t++)
+>>>>>>> b21bb33517c48e9ca50b0da2d6eacdafe80edfa9
         {
             //计算该星该时隙接入了多少群组
             double sum_group_num = 0;
             int max_user = 0;
             double max_user_group_idx = 0;  //存储用户数最多的群组的ID
+<<<<<<< HEAD
             for (int g = 0; g < user_num; g++)
+=======
+            for (int g = 0; g < para_Gnum; g++)
+>>>>>>> b21bb33517c48e9ca50b0da2d6eacdafe80edfa9
             {
                 double pos = M_3D[g][s][t];
                 sum_group_num += pos;
@@ -265,9 +325,15 @@ fobjReturn fobj0811v3(vector<double> Pos, int dim, vector<int> para_GRemain, vec
     //step3：处理约束2-单星容量，记录在loadS（实际和上面约束2计算过程类似）
     fill(loadS.begin(), loadS.end(), 0.0);
     fill(isLoadOver.begin(), isLoadOver.end(), 0.0);
+<<<<<<< HEAD
     for (int s = 0; s < sate_num; s++)
     {
         for (int g = 0; g < user_num; g++)
+=======
+    for (int s = 0; s < para_Snum; s++)
+    {
+        for (int g = 0; g < para_Gnum; g++)
+>>>>>>> b21bb33517c48e9ca50b0da2d6eacdafe80edfa9
         {
             //确保两次切换之间仅分配一个时隙给该群组，或者无分配，无分配则无需加该群组用户。
             if (sum_vec1d(M_3D[g][s]) == 1)
@@ -287,9 +353,15 @@ fobjReturn fobj0811v3(vector<double> Pos, int dim, vector<int> para_GRemain, vec
     int HO_success = sum_vec1d(loadS);
 
     //计算负载均衡项 越均衡值越小（其实是算负载数据的方差）
+<<<<<<< HEAD
     double HO_load_avg = HO_success / sate_num;
     double HO_load = 0; //负载均衡项
     for (int s = 0; s < sate_num; s++)
+=======
+    double HO_load_avg = HO_success / para_Snum;
+    double HO_load = 0; //负载均衡项
+    for (int s = 0; s < para_Snum; s++)
+>>>>>>> b21bb33517c48e9ca50b0da2d6eacdafe80edfa9
     {
         HO_load += pow((loadS[s] - HO_load_avg), 2);
     }
@@ -298,6 +370,7 @@ fobjReturn fobj0811v3(vector<double> Pos, int dim, vector<int> para_GRemain, vec
     //过程：遍历群组，找到所有接入位置（ss星tt时隙），由于之前处理了约束3，使得
     //单星单时隙仅有一个群组，所以只会找到一个接入位置。累积（该时间*10-群组剩余时间）。
     double HO_T = 0;
+<<<<<<< HEAD
     for (int g = 0; g < user_num; g++)
     {
         //寻找该群组的接入位置
@@ -305,6 +378,15 @@ fobjReturn fobj0811v3(vector<double> Pos, int dim, vector<int> para_GRemain, vec
         for (int ss = 0; ss < sate_num; ss++)
         {
             for (int tt = 0; tt < slot_num; tt++)
+=======
+    for (int g = 0; g < para_Gnum; g++)
+    {
+        //寻找该群组的接入位置
+        bool hasFind = 0;
+        for (int ss = 0; ss < para_Snum; ss++)
+        {
+            for (int tt = 0; tt < para_period; tt++)
+>>>>>>> b21bb33517c48e9ca50b0da2d6eacdafe80edfa9
             {
                 if (M_3D[g][ss][tt] == 1)   //按理来说只有一个
                 {
@@ -335,7 +417,11 @@ void BWOA()
     /*HO_BWOA_tizhi1.m*/
     /*读取*/
     //存储读取数据
+<<<<<<< HEAD
     int user_num = 0;
+=======
+    int para_Gnum = 0;
+>>>>>>> b21bb33517c48e9ca50b0da2d6eacdafe80edfa9
     vector<int> para_GueN;  //群组内用户数
     vector<int> para_GRemain;   //群首剩余时间
     /*备注：体制修改参数。需要修改的是这个读取的文件的名字
@@ -353,7 +439,11 @@ void BWOA()
     string line;
     while (getline(inFile, line))
     {
+<<<<<<< HEAD
         user_num++;
+=======
+        para_Gnum++;
+>>>>>>> b21bb33517c48e9ca50b0da2d6eacdafe80edfa9
         istringstream iss(line);
         int val1, val2;
         if (iss >> val1 >> val2)
@@ -363,13 +453,18 @@ void BWOA()
         }
     }
 
+<<<<<<< HEAD
     /*备注：体制修改参数。需要修改以下四个参数：para_Gsize，sate_num，para_T，frequency_type
+=======
+    /*备注：体制修改参数。需要修改以下四个参数：para_Gsize，para_Snum，para_T，frequency_type
+>>>>>>> b21bb33517c48e9ca50b0da2d6eacdafe80edfa9
     体制1:16,4,250,1
     体制2:8,1,300,2
     体制3:8,1,300,3*/
     /*参数*/
     const int frequency_type = 1;    //体制类型，1为体制1，2为体制2，3为体制3
     int para_Gsize = 16;    //【调整】群组内用户数量
+<<<<<<< HEAD
     int sate_num = 4;  //【调整】卫星数量，假设分布3/2/1
     int para_T = 250;	//【调整】判决间隔250ms
     int para_preamble = 8; //【调整】前导资源数量，码分复用（单时隙可分配资源数量）
@@ -377,23 +472,46 @@ void BWOA()
     int Th_G = 400;     //单星负载限制（用户数量）
     int SAT_begin_index[3] = {0,4,5};   //各个体制的卫星编号起始索引
     //vector<int> para_Galloc(user_num, para_Gsize); //创建一个长度为群组数量的vector,值都是给定的群组内用户数量。
+=======
+    int para_Snum = 4;  //【调整】卫星数量，假设分布3/2/1
+    int para_T = 250;	//【调整】判决间隔250ms
+    int para_preamble = 8; //【调整】前导资源数量，码分复用（单时隙可分配资源数量）
+    int para_period = para_T / 10;  //时隙数量（每个时隙10ms），时分复用
+    int Th_G = 400;     //单星负载限制（用户数量）
+    int SAT_begin_index[3] = {0,4,5};   //各个体制的卫星编号起始索引
+    //vector<int> para_Galloc(para_Gnum, para_Gsize); //创建一个长度为群组数量的vector,值都是给定的群组内用户数量。
+>>>>>>> b21bb33517c48e9ca50b0da2d6eacdafe80edfa9
     //各群组用户数量，先用14-16随机数生成代替（现在是从文件中读取）
     // 创建随机数生成器
     /*std::random_device rd;
     std::mt19937 gen(rd());
     std::uniform_int_distribution<> dis_GueN(15, 17);
+<<<<<<< HEAD
     std::vector<int> para_GueN(user_num);
     for (int i = 0; i < user_num; i++) {
+=======
+    std::vector<int> para_GueN(para_Gnum);
+    for (int i = 0; i < para_Gnum; i++) {
+>>>>>>> b21bb33517c48e9ca50b0da2d6eacdafe80edfa9
         para_GueN[i] = dis_GueN(gen);
     }*/
     //各群组剩余时间，随机数生成（现在是从文件中读取）
     /*std::uniform_int_distribution<> dis_GRemain(400, 500);
+<<<<<<< HEAD
     std::vector<int> para_GRemain(user_num);
     for (int i = 0; i < user_num; i++) {
         para_GRemain[i] = dis_GRemain(gen);
     }*/
     int BWOA_num = 1;
     int dim = user_num * sate_num * slot_num;  //群组数量*卫星数量*时隙数
+=======
+    std::vector<int> para_GRemain(para_Gnum);
+    for (int i = 0; i < para_Gnum; i++) {
+        para_GRemain[i] = dis_GRemain(gen);
+    }*/
+    int BWOA_num = 1;
+    int dim = para_Gnum * para_Snum * para_period;  //群组数量*卫星数量*时隙数
+>>>>>>> b21bb33517c48e9ca50b0da2d6eacdafe80edfa9
     int SearchAgents_no = 80;   //使用80个搜索代理（个体）来寻找最优解。
     int Max_iter = 30;  //迭代次数（30，测试时暂改1）
 
@@ -425,6 +543,7 @@ void BWOA()
         }
     }
     //初始化时生成一个较可行解M_decision（遍历时隙和卫星，按顺序给所有群组先初始分配一份资源，每个都分配过一份或资源都分完了则结束）。
+<<<<<<< HEAD
     //std::vector<std::vector<std::vector<double>>> RRR(user_num, std::vector<std::vector<double>>(sate_num, std::vector<double>(slot_num, 0.0)));
     auto RRR = make_vec3<double>(user_num, sate_num, slot_num, 0.0);   //三维
     int Gid = 0;
@@ -439,15 +558,39 @@ void BWOA()
             }
         }
         if (Gid >= user_num) {
+=======
+    //std::vector<std::vector<std::vector<double>>> RRR(para_Gnum, std::vector<std::vector<double>>(para_Snum, std::vector<double>(para_period, 0.0)));
+    auto RRR = make_vec3<double>(para_Gnum, para_Snum, para_period, 0.0);   //三维
+    int Gid = 0;
+    for (int i = 0; i < para_period; i++)
+    {
+        for (int j = 0; j < para_Snum; j++)
+        {
+            RRR[Gid][j][i] = 1;
+            Gid = Gid + 1;
+            if (Gid >= para_Gnum) { //直到给所有群组都分配过资源后，分配完毕。
+                break;
+            }
+        }
+        if (Gid >= para_Gnum) {
+>>>>>>> b21bb33517c48e9ca50b0da2d6eacdafe80edfa9
             break;
         }
     }
     //新建一个和RRR等维度的RRR_new
+<<<<<<< HEAD
     auto RRR_new = make_vec3<double>(user_num, sate_num, slot_num, 0.0);   //三维
     int K = std::min(user_num, sate_num * slot_num);
     for (int k = 0; k < int(SearchAgents_no / 2); k++)
     {
         vector<int> P = randperm(user_num, K); //随机打乱1~user_num的数，取前K个。
+=======
+    auto RRR_new = make_vec3<double>(para_Gnum, para_Snum, para_period, 0.0);   //三维
+    int K = std::min(para_Gnum, para_Snum * para_period);
+    for (int k = 0; k < int(SearchAgents_no / 2); k++)
+    {
+        vector<int> P = randperm(para_Gnum, K); //随机打乱1~para_Gnum的数，取前K个。
+>>>>>>> b21bb33517c48e9ca50b0da2d6eacdafe80edfa9
         //打乱是为了将前面按群组顺序分配的资源变为随机分配给各个群组，直到分配完资源，或者已经分配给所有群组一份。
         for (int i = 0; i < K; i++)
         {
@@ -456,11 +599,19 @@ void BWOA()
         }
         //将RRR_new抻平为一维向量（注意matlab的reshape是列主序，要反过来内部先遍历行）
         int index = 0;
+<<<<<<< HEAD
         for (int m = 0; m < user_num; m++)
         {
             for (int n = 0; n < sate_num; n++)
             {
                 for (int q = 0; q < slot_num; q++)
+=======
+        for (int m = 0; m < para_Gnum; m++)
+        {
+            for (int n = 0; n < para_Snum; n++)
+            {
+                for (int q = 0; q < para_period; q++)
+>>>>>>> b21bb33517c48e9ca50b0da2d6eacdafe80edfa9
                 {
                     Positions[k][index++] = RRR_new[m][n][q];
                 }
@@ -480,7 +631,11 @@ void BWOA()
         for (int i = 0; i < Positions.size(); i++)  //遍历每个SearchAgent
         {
             // 对所有参与搜索的个体（search agent），逐一计其在目标函数（object function），也就是适应度函数中的取值。（用于评估搜索个体的优劣）
+<<<<<<< HEAD
             fobjReturn fobj_return = fobj0811v3(Positions[i], dim, para_GRemain, para_GueN, user_num, sate_num, slot_num, Th_G);
+=======
+            fobjReturn fobj_return = fobj0811v3(Positions[i], dim, para_GRemain, para_GueN, para_Gnum, para_Snum, para_period, Th_G);
+>>>>>>> b21bb33517c48e9ca50b0da2d6eacdafe80edfa9
             vector<vector<vector<double>>> M_3D = fobj_return.M_3D;
             double HO_Sucnow = fobj_return.HO_Sucnow;
             double fitness = fobj_return.fitness;
@@ -492,11 +647,19 @@ void BWOA()
                 Leader_score = fitness; //更新最佳得分
                 //最佳位置也要更新成新的M_3D抻平后的结果
                 int pos_index = 0;
+<<<<<<< HEAD
                 for (int g = 0; g < user_num; g++)
                 {
                     for (int s = 0; s < sate_num; s++)
                     {
                         for (int t = 0; t < slot_num; t++)
+=======
+                for (int g = 0; g < para_Gnum; g++)
+                {
+                    for (int s = 0; s < para_Snum; s++)
+                    {
+                        for (int t = 0; t < para_period; t++)
+>>>>>>> b21bb33517c48e9ca50b0da2d6eacdafe80edfa9
                         {
                             Leader_pos[pos_index++] = M_3D[g][s][t];
                         }
@@ -616,11 +779,19 @@ void BWOA()
                 }
             }
 
+<<<<<<< HEAD
             //【尝试】若1的数量多于sate_num * slot_num，则随机删去多余的1。
             double pos1sum = sum_vec1d(Positions[i]);
             if (pos1sum > sate_num * slot_num)
             {
                 // 先找到Positions[i]中所有值为1的位置（索引），随机取其中的sate_num * slot_num个置1。
+=======
+            //【尝试】若1的数量多于para_Snum * para_period，则随机删去多余的1。
+            double pos1sum = sum_vec1d(Positions[i]);
+            if (pos1sum > para_Snum * para_period)
+            {
+                // 先找到Positions[i]中所有值为1的位置（索引），随机取其中的para_Snum * para_period个置1。
+>>>>>>> b21bb33517c48e9ca50b0da2d6eacdafe80edfa9
                 vector<int> index;
                 int pos_size = Positions[i].size();
                 for (int k = 0; k < pos_size; k++)
@@ -630,6 +801,7 @@ void BWOA()
                         index.emplace_back(k);
                     }
                 }
+<<<<<<< HEAD
                 // 在0~index.size()的数中，随机取其中sate_num * slot_num个。
                 vector<int> indexnew = randperm(index.size(), sate_num * slot_num);
                 // 先将原来的Positions[i]中的数置0。
@@ -639,6 +811,17 @@ void BWOA()
                 int ceshi_size = indexnew.size();
                 vector<double> PPP(Positions[i].size(), 0.0);
                 for (int k = 0; k < sate_num * slot_num; k++)
+=======
+                // 在0~index.size()的数中，随机取其中para_Snum * para_period个。
+                vector<int> indexnew = randperm(index.size(), para_Snum * para_period);
+                // 先将原来的Positions[i]中的数置0。
+                vector<double> pos_zero(Positions[i].size(), 0.0);
+                Positions[i] = pos_zero;
+                // 再遍历indexnew，仅给指定para_Snum * para_period个位置赋值1。
+                int ceshi_size = indexnew.size();
+                vector<double> PPP(Positions[i].size(), 0.0);
+                for (int k = 0; k < para_Snum * para_period; k++)
+>>>>>>> b21bb33517c48e9ca50b0da2d6eacdafe80edfa9
                 {
                     PPP[index[indexnew[k]]] = 1;
                 }
@@ -651,7 +834,11 @@ void BWOA()
         //迭代次数增加1
         iter = iter + 1;
 
+<<<<<<< HEAD
         fobjReturn fobj_return = fobj0811v3(Leader_pos, dim, para_GRemain, para_GueN, user_num, sate_num, slot_num, Th_G);
+=======
+        fobjReturn fobj_return = fobj0811v3(Leader_pos, dim, para_GRemain, para_GueN, para_Gnum, para_Snum, para_period, Th_G);
+>>>>>>> b21bb33517c48e9ca50b0da2d6eacdafe80edfa9
         printf("迭代次数%d,Score=%f,HO_success=%d\n", iter, Leader_score, (int)fobj_return.HO_Sucnow);
 
         if (todoTol == 1 && abs(Leader_score - Leader_score_pre) < delta)
@@ -663,12 +850,21 @@ void BWOA()
     }
 
     //将最优的分配结果存起来
+<<<<<<< HEAD
     vector<vector<vector<double>>> ansHoD1 = make_vec3(user_num, sate_num, slot_num, 0.0);
     for (int index = 0; index < Leader_pos.size(); index++)
     {
         int i = index / (sate_num * slot_num);
         int j = (index % (sate_num * slot_num)) / slot_num;
         int k = (index % (sate_num * slot_num)) % slot_num;
+=======
+    vector<vector<vector<double>>> ansHoD1 = make_vec3(para_Gnum, para_Snum, para_period, 0.0);
+    for (int index = 0; index < Leader_pos.size(); index++)
+    {
+        int i = index / (para_Snum * para_period);
+        int j = (index % (para_Snum * para_period)) / para_period;
+        int k = (index % (para_Snum * para_period)) % para_period;
+>>>>>>> b21bb33517c48e9ca50b0da2d6eacdafe80edfa9
         ansHoD1[i][j][k] = Leader_pos[index];
     }
 
@@ -700,17 +896,30 @@ void BWOA()
     int all_UEnum = line_idx;   //用户数量
 
     //提取群组判决结果
+<<<<<<< HEAD
     vector<double> G_Tsat(user_num, 0.0);
     vector<double> G_Ttime(user_num, 0.0);
     //遍历每个g，提取各个群组有效分配（s星和t时隙）结果到两数组。
     for (int g = 0; g < user_num; g++)
+=======
+    vector<double> G_Tsat(para_Gnum, 0.0);
+    vector<double> G_Ttime(para_Gnum, 0.0);
+    //遍历每个g，提取各个群组有效分配（s星和t时隙）结果到两数组。
+    for (int g = 0; g < para_Gnum; g++)
+>>>>>>> b21bb33517c48e9ca50b0da2d6eacdafe80edfa9
     {
         bool isFind = 0;
         int first_t_s_idx[2];
         //遍历这个群组的分配情况，如果能找得到则只取第一个（优先遍历时隙）。
+<<<<<<< HEAD
         for (int t = 0; t < slot_num; t++)
         {
             for (int s = 0; s < sate_num; s++)
+=======
+        for (int t = 0; t < para_period; t++)
+        {
+            for (int s = 0; s < para_Snum; s++)
+>>>>>>> b21bb33517c48e9ca50b0da2d6eacdafe80edfa9
             {
                 if (ansHoD1[g][s][t] == 1) {
                     isFind = 1;
@@ -737,7 +946,11 @@ void BWOA()
     vector<int> U_Tsat(all_UEnum, -1);  //目标卫星
     vector<int> U_Ttime(all_UEnum, -1); //接入发起时间
     vector<int> U_prb(all_UEnum, -1);   //接入前导
+<<<<<<< HEAD
     vector<int> gtime(user_num, 0);//记录每个群组内已分配接入时间的用户数量（前导资源有限）
+=======
+    vector<int> gtime(para_Gnum, 0);//记录每个群组内已分配接入时间的用户数量（前导资源有限）
+>>>>>>> b21bb33517c48e9ca50b0da2d6eacdafe80edfa9
     vector<int> U_no;   //记录没有被分配资源的用户id
     for (int u = 0; u < all_UEnum; u++)
     {
